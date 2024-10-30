@@ -1,0 +1,18 @@
+client_config_backend: settings
+client_config:
+  client_id: null
+  client_secret: null
+  auth_uri: https://accounts.google.com/o/oauth2/auth
+  token_uri: https://oauth2.googleapis.com/token
+  revoke_uri: https://accounts.google.com/o/oauth2/revoke
+  redirect_uri: urn:ietf:wg:oauth:2.0:oob
+
+save_credentials: True
+save_credentials_backend: file
+save_credentials_file: credentials.json
+
+get_refresh_token: True
+
+oauth_scope:
+  - https://www.googleapis.com/auth/drive
+  - https://www.googleapis.com/auth/drive.appdata
